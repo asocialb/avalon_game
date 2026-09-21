@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: avalon
+    env: node
+    plan: free
+    buildCommand: cd web && npm install && npm run build && cd ../server && npm install && npm run build
+    startCommand: node server/dist/index.js
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22.11.0

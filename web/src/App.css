@@ -1,0 +1,270 @@
+.screen {
+  padding: 20px 16px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.subtitle {
+  margin-top: -8px;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-color: var(--accent);
+  color: var(--text-h);
+  background: var(--accent-bg);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+  color: var(--text-h);
+  font-size: 16px;
+}
+
+.btn {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #16171d;
+}
+
+.btn.primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn.danger {
+  background: #e5484d;
+  color: white;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
+.button-row .btn {
+  flex: 1;
+}
+
+.hint {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.error {
+  color: #e5484d;
+  font-size: 14px;
+}
+
+.room-code-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+}
+
+.room-code-banner strong {
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  color: var(--text-h);
+}
+
+.player-list,
+.player-picker,
+.reveal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.player-list li,
+.reveal-list li {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+}
+
+.player-list li.disconnected {
+  opacity: 0.5;
+}
+
+.crown {
+  margin-right: 6px;
+}
+
+.you {
+  color: var(--accent);
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.role-toggle {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.role-toggle input {
+  margin-top: 4px;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.mission-track {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.mission-pip {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  color: var(--text);
+  position: relative;
+}
+
+.mission-pip.current {
+  border-color: var(--accent);
+}
+
+.mission-pip.success {
+  border-color: #30a46c;
+  color: #30a46c;
+}
+
+.mission-pip.fail {
+  border-color: #e5484d;
+  color: #e5484d;
+}
+
+.pip-players {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.pip-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.role-panel {
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.role-panel summary {
+  cursor: pointer;
+  color: var(--text-h);
+}
+
+.role-panel-body {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.panel h3 {
+  margin: 0;
+  font-size: 17px;
+  color: var(--text-h);
+}
+
+.player-picker label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.success-text {
+  color: #30a46c;
+}
+
+.fail-text {
+  color: #e5484d;
+}

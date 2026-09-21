@@ -1,0 +1,8 @@
+avalon/
+node_modules/
+dist/
+.DS_Store
+*.log
+.idea/
+avallon.iml
+/package-lock.json
